@@ -21,9 +21,16 @@
     "minimum-stability": "dev",
     "autoload": {
       "psr-4":{
-          "Alyson\\App\\": "src/Alyson/"
+          "Alyson\\App\\": [
+              "src/Alyson/",
+              "tests/Alyson/"
+          ]
       }
     },
-    "license":"GPL-2.0"
+    "license":"GPL-2.0",
+    "config":{
+        "bin-dir": "bin/"
+    }
+
 
 }
